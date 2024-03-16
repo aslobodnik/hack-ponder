@@ -24,29 +24,3 @@ ponder.on("MyToken:Transfer", async ({ event, context }) => {
     },
   });
 });
-
-ponder.on("MyToken:OwnershipTransferred", async ({ event, context }) => {
-  console.log(event.args);
-});
-
-ponder.on("MyToken:PassTheBase", async ({ event, context }) => {
-  console.log(event.args);
-  const { BaseToken } = context.db;
-
-  // await BaseToken.update({
-  //   id: event.args.tokenId,
-  //   data: {
-  //     currentStreak: event.args.streak,
-  //   },
-  // });
-});
-
-// export default createSchema((p) => ({
-//   BaseToken: p.createTable({
-//     id: p.bigint(),
-//     currentOwner: p.hex().optional(),
-//     owners: p.hex().list().optional(),
-//     dropped: p.boolean().optional(),
-//     currentStreak: p.bigint().optional(),
-//   }),
-// }));
