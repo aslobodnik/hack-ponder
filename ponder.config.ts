@@ -5,17 +5,17 @@ import { MyTokenAbi } from "./abis/MyTokenAbi";
 
 export default createConfig({
   networks: {
-    baseSepolia: {
-      chainId: 84532,
-      transport: http(process.env.PONDER_RPC_URL_84532),
+    base: {
+      chainId: 8453,
+      transport: http(process.env.PONDER_RPC_URL_8453),
     },
   },
   contracts: {
     MyToken: {
       abi: MyTokenAbi,
-      address: "0x024908AE411d28DeDF86700C69b2F4A172FebCCc",
-      network: "baseSepolia",
-      startBlock: 7423641,
+      address: "0xEC2244b547BD782FC7DeefC6d45E0B3a3cbD488d",
+      network: "base",
+      startBlock: 11918245,
     },
   },
 });
