@@ -13,9 +13,9 @@ export default createConfig({
   contracts: {
     MyToken: {
       abi: MyTokenAbi,
-      address: "0x7382Eb8658DEFd8883cBCA5AE4B55f2A70BF4a78",
+      address: "0x024908AE411d28DeDF86700C69b2F4A172FebCCc",
       network: "baseSepolia",
-      startBlock: 7417848,
+      startBlock: 7423641,
     },
   },
 });
